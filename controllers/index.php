@@ -2,12 +2,21 @@
 
 require 'view/login.view.php';
 //var_dump($app['database']->selectAll());
-$uname ='not set yet';
+//$uname ='not set yet';
 $pwd =null;
 if (isset($_POST['submit']))
 {
-    if (isset($_POST['uname']))
+    if ($_POST['uname']!=null)
     {
+           echo ' if block is working';
 
     }
+    else
+    {
+
+        header('Location: login.view.php');
+
+    }
+
+
 }
