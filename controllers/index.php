@@ -14,7 +14,7 @@ if (isset($_POST['submit']))
     else
     {
 
-        header('Location: login.view.php');
+        header('Location:');
 
     }
 
